@@ -6,11 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Starbucks</title>
   <link rel="stylesheet" href="./styles/css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
  
 <body class="body">
   <header>
-    <nav>
+    <nav class="nav">
       <div class="container  flexbox flexbox--centered-spaced">  
       <a href="#">
         <img
@@ -32,18 +36,31 @@
     </nav>
   </header>
   <main>
-    <article>
-      <div>
-        <h1>It's not just Coffee It's Starbucks</h1>
-        <p>
-          Enjoy this summer with your favorite Shaken Espresso. Order it here. The summer favorite. A coffee full of
-          flavor and freshness. Order it here.
-        </p>
-        <a href="#">Order Now</a>
+    <article class="hero">
+      <div class="container g-layout g-layout--center md:g-layout--1fr-1fr ">
+        <div class="d-flex f-direction-column a-items-start ">
+          <h1 class="hero__title">It's not just Coffee <br>
+              It's <span class="c-primary">Starbucks</span></h1>
+          <p class="hero__paragraph">
+            Enjoy this summer with your favorite Shaken Espresso. Order it here. The summer favorite. A coffee full of
+            flavor and freshness. Order it here.
+          </p>
+          <a href="#" class="link link--active interactive interactive--lg ">Order Now</a>
+        </div>
+        <img
+          src="https://hips.hearstapps.com/delish/assets/15/28/1436214442-delish-chocolate-crunch-frappuccino-japan.png"
+          alt="Starbucks" width="320" height="527">
       </div>
-      <img
-        src="https://hips.hearstapps.com/delish/assets/15/28/1436214442-delish-chocolate-crunch-frappuccino-japan.png"
-        alt="" width="320" height="527">
+      <div class="social-media">
+        <a href="#">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="#">
+          <i class="bi bi-twitter-x"></i>
+        </a>
+        <a href="#">
+          <i class="bi bi-instagram"></i>
+        </a>
     </article>
   </main>
 </body>
